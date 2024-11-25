@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <title>The Trading Sandbox (Dashboard)</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="dash_body">
+        <div class="heading">
+            <div>
+                <h1>The Trading Sandbox</h1>
+            </div>
+        </div>
+        <div class="form_container">
+           <div>
+               <h1>Settings</h1>
+               <input class="start_cap" type="number" placeholder="Start Capital (Start Investment)" />
+               <br/>
+               <input class="price_of_asset" type="number" placeholder="Start Price Of Asset" />
+               <br/>
+               <input class="vol_idx" type="number" placeholder="Volatility Percentage Move Per Bar Tick (Recommended 0.005)" />
+               <br/>
+               <input class="time_per_bar" type="number" placeholder="Time Per Bar (seconds)" />
+               <br/>
+               <button class="start_sim_button">Start Simulation</button>
+           </div>
+        </div>
+    </div>
+    <script>
+        const start_capital = document.querySelector(".start_cap");
+        const price_of_asset=document.querySelector(".price_of_asset");
+        const vol_idx = document.querySelector(".vol_idx");
+        const time_per_bar=document.querySelector(".time_per_bar");
+        const start_sim_button = document.querySelector('.start_sim_button');
+        let sc=0, poa=0, vi=0, tpb=0;
+        start_capital.addEventListener("change", (e) => {
+            sc=e.target.value;
+        });
+        price_of_asset.addEventListener("change", (e) => {
+            poa=e.target.value;
+        });
+        vol_idx.addEventListener("change", (e) => {
+            vi=e.target.value;
+        });
+        time_per_bar.addEventListener("change", (e) => {
+            tpb=e.target.value;
+        });
+        start_sim_button.addEventListener("click", () => {
+            if (sc<=0||poa<=0||vi<=0||tpb<=0) {
+                alert("All Fields Must Be All Positive Nonzeros!");
+                return;
+            }
+            window.location.replace("index.html?start="+sc.toString()+"&price="+poa.toString()+"&v="+vi.toString()+"&t="+tpb.toString())
+        })
+    </script>
+</body>

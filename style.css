@@ -1,0 +1,272 @@
+*{
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.btn-group{
+    display: flex;
+    flex-direction: row;
+    width:50%;
+    
+}
+.long-btn{
+    width:50%;
+    padding:10px;
+    color:white;
+    background:rgb(20, 150, 0);
+    border: none;
+    font-weight:bold;
+    cursor:pointer;
+}
+.long-btn:hover{
+    background:rgb(14, 105, 0);
+}
+.short-btn:hover {
+    background:rgb(156, 10, 0);
+}
+.short-btn{
+    width:50%;
+    padding:10px;
+    color:white;
+    background:rgb(206, 14, 0);
+    border: none;
+    font-weight:bold;
+    cursor:pointer;
+}
+.btn-disabled {
+    background:rgb(0, 0, 0) !important;
+}
+
+
+.chart{
+   width:100%;
+   height:80%; 
+}
+.tv-lightweight-charts{
+    width: 100% !important;
+    height:100% !important;
+    
+}
+.chartContainer{
+    width: 60%;
+    height:100%;
+    flex-direction: column;
+}
+.info_container{
+    width:40%;
+    height:100%;
+    border-left:1px solid white;
+    flex-direction: column;
+    background: #282B2A;
+}
+.mainContainer{
+  width:100%;
+  height:100vh;
+  display:flex;
+  flex-direction: row;
+}
+body{
+    margin:0;
+}
+.priceInfo{
+    width:100%;
+    height:15%;
+    border-bottom:1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.priceInfo>div{
+    width:90%;
+    height:90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pause_btn_paused{
+    width:30%;
+    color:white;
+    background:rgb(221, 0, 0);
+    padding:10px;
+    border:none;
+    cursor:pointer;
+}
+.pause_btn_paused:hover{
+    background:rgb(113, 0, 0);
+}
+.pause_btn_play{
+    width:30%;
+    color:white;
+    background:rgb(18, 125, 2);
+    padding:10px;
+    border:none;
+    cursor:pointer;
+}
+.pause_btn_play:hover{
+    background:rgb(12, 87, 0);
+}
+.price_label{
+    color:white;
+}
+.perps_trading{
+    width:100%;
+    height:60%;
+    border-bottom:1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.perps_trading>div{
+    width:90%;
+    height:90%;
+}
+.formarea>b{
+   color:white;
+}
+.formarea>input{
+    padding:15px;
+    border-radius:5px;
+    border:none;
+
+}
+.enter_trade{
+    width:40%;
+    padding:10px;
+    font-weight:bold;
+    border-radius:5px;
+    border:none;
+    background:rgb(0, 79, 236);
+    color:white;
+    cursor:pointer;
+    
+}
+.enter_trade:hover{
+    background:rgb(0, 55, 164);
+}
+.formarea{
+    display:flex;
+    flex-direction: column;
+}
+.end_btn{
+    padding:5px;
+    cursor:pointer;
+    font-weight:bold;
+    border:none;
+    font-weight: bold;
+    color:white;
+    background:rgb(0, 79, 236);
+}
+.end_btn:hover{
+    background:rgb(0, 55, 164);
+}
+.open_trades{
+    width:100%;
+    height:20%;
+    background: #282B2A;
+    display: flex;
+    flex-direction: column;
+    overflow-y:scroll;
+}
+.trade{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    border-bottom: 1px solid white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.trade>div{
+    width:90%;
+    height:90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color:white;
+    justify-content: space-between;
+}
+.g{
+    color:green;
+}
+.r{
+    color:red;
+}
+.current_cash_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:15%;
+    color:white;
+}
+.current_cash_box>div{
+    width:90%;
+    height:90%;
+}
+.dash_body{
+    width:100%;
+    height:100vh;
+    background:#282B2A;
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    display: flex;
+    width:100%;
+    height:10%;
+    border-bottom:1px solid white;
+    align-items: center;
+    justify-content: center;
+}
+.form_container{
+    height:90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form_container>div{
+    width:40%;
+    height:80%;
+    background:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form_container>div>h1{
+    color:rgb(0, 76, 255);
+}
+.form_container>div>input{
+    padding:15px;
+    width:70%;
+    outline:none;
+}
+.start_sim_button{
+    width:40%;
+    padding:15px;
+    background:rgb(0, 76, 255);
+    color:white;
+    border-radius:5px;
+    border:none;
+    font-weight: bold;
+    
+}
+.start_sim_button:hover{
+    cursor:pointer;
+    background:rgb(0, 8, 255);
+}
+.heading>div{
+    width:90%;
+    height:80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.heading>div>h1{
+    color:white;
+}

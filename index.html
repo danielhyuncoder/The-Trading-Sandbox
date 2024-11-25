@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="./style.css"></link>
+    <title>The Trading Sandbox (Running Simulator)</title>
+</head>
+<body>
+    
+    <div class="mainContainer">
+        <div class="chartContainer">
+            <div class="chart" id="chart"></div>
+            <div class="open_trades">
+                
+            </div>
+        </div>
+        <div class="info_container">
+            <div class="priceInfo">
+                <div>
+                    <h1 class="price_label">$XXX.XXX</h1>
+                    <div>
+                        <button class="pause_btn pause_btn_paused">Pause</button>
+                        <button class="end_sim pause_btn pause_btn_paused">End Simulation</button>
+                    </div>
+                </div>
+            </div>
+            <div class="perps_trading">
+                <div>
+                   <h1 style="color: white;">Enter Position: </h1>
+                   <div class="btn-group">
+                     <button class="long-btn">Long/Buy</button>
+                     <button class="short-btn btn-disabled">Short/Sell</button>
+                   </div>
+                   <div class="formarea">
+                    <br/>
+                    <input class="getamount" type="number" placeholder="Amount" />
+                    <br/>
+                    <input class="gettakeprofit" type="number" placeholder="Take Profit" />
+                    <br/>
+                    <input class="getstoploss" type="number" placeholder="Stop Loss" />
+                    <br/>
+                    <input class="getleverage" type="number" placeholder="Leverage" />
+                    <br/>
+                    <b class="liquidation_price">Liquidation Price: 0</b>
+                    <br/>
+                    <b class="full_amt_label">Full Amount: 0</b>
+                    <br/>
+                    <button class="enter_trade">Enter Trade</button>
+                   </div>
+                </div>
+            </div>
+            <div class="current_cash_box">
+              <div>
+                <h1 class="current_cash_label">Current Cash: </h1>
+              </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./libraries/lightweightcharts.js"></script>
+    <script src="./main.js"></script>
+    
+</body>
